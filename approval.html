@@ -1,0 +1,26 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title th:text="${title}">[WiFlow Notification] Approval Required: {prjoect name}</title>
+</head>
+<body>
+Dear <span th:text="${signUser}">{Approver Name}</span>, <br><br>
+
+Please be informed that a new project has been initiated and need your approval.<br><br>
+
+Please visit <a th:href="${host}">wiflow link</a> to access the project.<br><br>
+
+Project Details:
+<ul>
+  <li>Project Name: <span th:text="${projectName}"></span></li>
+  <li>Period: <span th:text="${period}">[Insert Project Period]</span></li>
+</ul>
+<br><br><br>
+*Please note that this is an automated email and we kindly request that you do not reply to this
+message.<br><br><br><br>
+
+Best regards,<br><br>
+
+WiFlow System<br><br>
+</body>
+</html> 
